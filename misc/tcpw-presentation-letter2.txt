@@ -1,0 +1,4 @@
+7. a 8. novembra sa vo Viedni a v Bratislave uskutoční Twin City Perl Workshop, ktorý je organizovaný bratislavskou a viedenskou perlovou komunitou a je zaradený v medzinárodnom kalendári Perlových konferencií. Úlohou workshopu je prezentácia možností programovacieho jazyku Perl v najrôznejších oblastiach programovania a automatizácie procesov pre čo najširší okruh možných používateľov, ako aj ukážka riešenia úzko špecializovaných problémov a ďalšieho smerovnia tohto jazyka.
+Workshop bude rozdelený na dve časti, prvá sa uskutocní 7.11.2008 vo Viedni, druhá 8.11.2008 v Bratislave. Každý deň bude začinať všeobecnejšími prednáškami v lokálnom jazyku (nemčina alebo slovenčina), po ktorých budú nasledovať špecializované prednášky v anglickom jazyku.
+
+Registrácia a podrobný program prednášok sú prístupné na http://ba.pm.org/go/workshop

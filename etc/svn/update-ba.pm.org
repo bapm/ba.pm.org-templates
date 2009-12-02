@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /data/www/pm
+svk up
+

@@ -1,0 +1,48 @@
+[%
+META title       = "Mobile Web Design";
+META description = "Review of a book 'Mobile Web Design'";
+META keywords    = "review, book, mobile, design";
+%]
+
+<div class="cover"><a href="http://www.amazon.com/gp/product/0615185916?ie=UTF8&amp;tag=bratperlmong-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0615185916"><img src="[% relative_root %]images/mobile-web-design-book.jpg" alt="cover" /></a><img src="http://www.assoc-amazon.com/e/ir?t=bratperlmong-20&amp;l=as2&amp;o=1&amp;a=0615185916" width="1" height="1" alt="" style="border:none !important; margin:0px !important;" /></div>
+
+<pre>
+Book Review : <a href="http://www.amazon.com/gp/product/0615185916?ie=UTF8&amp;tag=bratperlmong-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0615185916">Mobile Web Design</a>
+Author(s)   : by Cameron Moll
+Publisher   : Cameron Moll (January 19, 2008)
+ISBN        : <a href="http://www.amazon.com/gp/product/0615185916?ie=UTF8&amp;tag=bratperlmong-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0615185916">0615185916</a>
+Pages       : 108 Pages
+Language    : English
+</pre>
+
+<h1>Mobile Web Design</h1>
+
+<p>
+The book is quite short - 102 A5 pages. It doesn't go into too much technical details.
+In my point of view it will be a good introduction chapter for a book about mobile web
+design. May be that the target audience is not developers but non-technical people,
+that will run away when faced bigger one.
+</p>
+
+<p>
+There are a lot of links and web references. On one hand it's good, as one can go and
+investigate further, but book assumes that reader goes and really checks the pages.
+I buy "physical" books to read them while I'm travelling or when I'm somewhere off-line.
+Scratching the topic and then referring to a blog just keeps me upset because I can not
+check it right away. So I had to "re-read" the book, extract all the links that were
+interesting and check them out later. 
+</p>
+
+<p>
+So the result - Fair introduction for mobile web newbies.
+</p>
+
+<div class="score">
+<pre>Hodnotenie: 1/4</pre>
+<img src="[% content_root %]images/plody-borievky.jpg" alt="1" />
+<img src="[% content_root %]images/plody-borievky-gray.jpg" alt="1" />
+<img src="[% content_root %]images/plody-borievky-gray.jpg" alt="1" />
+<img src="[% content_root %]images/plody-borievky-gray.jpg" alt="0" />
+</div>
+
+<p class='signature'>7. Sep 2009<br/>Jozef</p>

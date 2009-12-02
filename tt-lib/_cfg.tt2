@@ -1,0 +1,45 @@
+[%#
+
+root_path     - points to the sk/en page version root
+content_root  - points to the root where all content is stored (sk root_path)
+relative_root - points to the current folder in sk web tree
+lang          - current language (sk/en)
+lang_url      - url to the page of the other language
+
+-%]
+[%
+
+
+# fill in "root_path" variable with a relative path to the root of the web
+path_folders = template.name.split('/');
+tmp = path_folders.pop;
+FOREACH i = path_folders;
+	root_path = "../${root_path}";
+END;
+
+dirname       = template.name.replace('[^/]+$', '');
+content_root  = root_path;
+relative_root = '';
+
+# set paths if in other than default language
+IF lang;
+	content_root = "../${content_root}";
+	relative_root = "${content_root}${dirname}";
+END;
+
+# default language is sk
+lang = lang || 'sk';
+
+-%]
+[%
+
+lang_url = template.name.replace('\.tt2(-..)?$', '.html');
+
+IF lang == 'en';
+	lang_url = lang_url.replace('^../', '');
+	lang_url = "${content_root}${lang_url}";
+ELSE;
+	lang_url = "${content_root}en/${lang_url}";
+END;
+
+-%]

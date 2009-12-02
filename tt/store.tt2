@@ -1,0 +1,11 @@
+[%
+META title       = "Bratislava Perl Mongers store";
+META description = "Bratislava Perl Mongers store";
+META keywords    = "books";
+
+META content_max_width = 1;
+%]
+
+<iframe src="http://astore.amazon.com/bratperlmong-20" class="shop">
+<p>Your browser does not support iframes.</p>
+</iframe>

@@ -1,0 +1,50 @@
+[%
+META title       = "Cyclone3";
+META description = "O Cyclone3 CMS";
+META keywords    = "Cyclone3, CMS";
+%]
+
+<h1>Cyclone3</h1>
+
+<p>Features</p>
+
+<ul>
+	<li>vyvíjaný od 1999 firmou <a href="http://www.comsultia.com/">Comsultia</a></li>
+	<li>od 2006 Open Source</li>
+	<li><a href="http://www.markiza.sk/">používaný najsledovanejšou TV stanicou</a> na Slovensku</li>
+	<li>administračné rozhranie pomocou <a href="http://en.wikipedia.org/wiki/Xul">XUL GUI</a></li>
+	<li>SOAP ako rozhranie medzi GUI a Cyclone3 serverom</li>
+	<li>URL modelovanie</li>
+	<li>data oddelené od štruktúry a dizajnu</li>
+	<li>hotová podpora pre <a href="http://en.wikipedia.org/wiki/OpenDocument">ISO Open Document</a> a <a href="http://en.wikipedia.org/wiki/Docbook">DocBook</a> formát importy/exporty</li>
+	<li>Pod -> DocBook -> XHTML transformácie</li>
+	<li>pokročilá notifikácia o výnimkách za behu</li>
+	<li>enkódovanie videa, streaming =&gt; poskytovanie</li>
+	<li>jemná kontrola admin prístupov</li>
+	<li>vytvorené pre clusters</li>
+	<li>multi-lingual</li>
+	<li>komerčná podpora</li>
+</ul>
+
+<p><a href="http://www.cyclone3.org/">Domovská stránka</a></p>
+
+<p>Development vychytávky</p>
+
+<ul>
+	<li>plná podpora Unicode (database, publikovanie, konfigurácia)</li>
+	<li>viac úrovňový caching (<a href="http://www.danga.com/memcached/">memcached</a>)</li>
+	<li>CMS aplikácie sú prefixované a organizované číslami (rýchla jednoduchá navigácia)</li>
+	<li>domény a subdomény + root cesty organizované cez adresárovú štruktúru (jedna inštalácia pre viacero domén)</li>
+	<li>domény a subdomény + root cesty majú dedenie vlastností</li>
+	<li>SQL logovanie s možnosťou replay pre spätnú analýzu a tunning</li>
+	<li>nastaviteľné pred cache-ovanie</li>
+	<li>nastaviteľné (na neskoršie spustenie) SQL queries</li>
+	<li>skript na doporučenie databázových ALTER TABLE príkazov postavené
+	na definíciách tabuliek z aktuálne bežiacej databázy a schéma definícií
+	z aktuálneho .sql súboru</li>
+	<li>SVG grafy</li>
+	<li>inteligentné orezávanie obrázkov (napr. s detekciou tváre)</li>
+</ul>
+
+
+<p><a href="index.html">Iné projekty</a></p>

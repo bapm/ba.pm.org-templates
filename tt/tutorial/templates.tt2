@@ -1,0 +1,13 @@
+[%
+META title       = "Documentations templates";
+META description = "docbook templates to help to start writing project documentation";
+META keywords    = "docbook, template, documentation, dokumentácia";
+%]
+
+<h1>Documentations templates</h1>
+
+<ul>
+	<li><a href="[% relative_root %]templates/specification-template.docbook">project requirements/specification</a></li>
+	<li><a href="[% relative_root %]templates/proposal-template.docbook">work proposal</a></li>
+	<li><a href="[% relative_root %]templates/project-template.docbook">project document</a></li>
+</ul>

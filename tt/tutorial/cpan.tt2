@@ -1,0 +1,66 @@
+[%
+META title       = "Čo skrýva CPAN";
+META description = "Čo všetko ponúká CPAN - archív distribúcií Perl modulov";
+META keywords    = "CPAN";
+%]
+
+<h1>Čo skrýva CPAN</h1>
+
+<p>CPAN je archív distribúcií Perl modulov, ktorý má mirrory-y po celom svete.
+Perl distribúcia je jeden <code>.tar.gz</code> súbor obsahujúci: jeden alebo
+viac modulov (.pm), dokumentáciu (README, Changes, integrovaný Pod), testy
+(v t/ adresári), skripty (väčšinou v script/ adresári, alebo v hlavnom
+adresári) a jeden inštalačný skript (Build.PL alebo Makefile.PL). Inštalačný
+skript má v sebe zadefinované závislosti na iných moduloch. Týmto
+spôsobom je zabezpečené unifikovaná inštalácia. Úlohou CPAN-u okrem skladovania
+je aj indexácia - vyhľadávanie. Ďalej je k dispozícií niekoľko nástrojov na
+uľahčenie života autorom modulov.
+</p>
+
+<p>Na CPAN-e je momentálne registrovaných 58000 modulov 15476 distribúcií a
+6707 autorov. A počet uploadnutých modulov má rastúcu tendenciu.
+Mať prehľad o tom ktoré za to stoja a ktoré nie je občas dosť zložité. Je možné
+pridať hodnotenie a review ale to sa zas tak často nevyužíva. Takže niekedy
+je potrebné si dobre tipnúť. Keď je modul vyhovujúci, ale niečo mu chýba
+dajú sa použiť tri prístupy. Prvý je vytvoriť si vlastnú verziu pod iným
+názvom. Druhý je vytvoriť plugin modul ktorý rozšíri funkcionalitu primárneho
+modulu, ale tretí (asi najlepší) je skontaktovať autora a poslať mu patch
+pomocou <a href="http://rt.cpan.org/">rt.cpan.org</a>.
+V tomto prípade si treba dať záležať na tom aby patch obsahoval aj testy
+k danej zmene. Ináč sa môže stať že bude zamietnutý, alebo bude dosť dlho trvať
+kým sa objaví v niektorej z nadchádzajúcich verzií modulu.
+</p>
+
+<p>Hlavná stránka CPAN-u je <a href="http://www.cpan.org">www.CPAN.org</a>,
+ale najpoužívanejšia je <a href="http://search.cpan.org">search.CPAN.org</a>
+na ktorej sa dajú vyhľadávať moduly.
+</p>
+
+<p>Aké môžu byť motivácie na uploadnutie modulu? Napríklad pochváliť sa na čom
+človek robí, získať na to odozvu a komentáre, poprípade nájsť človeka čo má
+rovnaké záujmy a ktorý je ochotný ďalej zlepšovať tento modul. Neodmysliteľným
+pozitívom je možnosť ukázať svoje programátorské zručnosti pri pohovore do
+nového zamestnania. Určite k dobrým benefitom patrí, pekne usporiadaná,
+prehľadávateľná Pod dokumentácia, možnosť inštalácie pomocou "cpan shell" na
+ďalších počítačoch, automatické testy ktoré preveria či modul
+funguje aj na iných operačných systémoch alebo architektúrach.
+</p>
+
+<p><a href="http://www.cpan.org/">www.CPAN.org</a> a
+<a href="http://search.cpan.org/">search.CPAN.org</a> je index a archív
+modulov, na to aby sa dalo niečo pridať sa treba zaregistrovať na
+<a href="http://pause.cpan.org/">pause.CPAN.org</a>. Po zaregistrovaní je
+možné upload-ovať <code>.tar.gz</code> súbory s distribúciou Perl modulov.
+Čo ešte ponúka CPAN? Request tracker (<a href="http://rt.CPAN.org/">http://rt.CPAN.org/</a>)
+na ktorom sa dajú
+zaznamenávať chyby, poprípade žiadosti na vylepšenie modulov. AnnoCPAN
+(<a href="http://annoCPAN.org/">http://annoCPAN.org/</a>)
+poskytuje možnosť dopisovať poznámky k Pod dokumentácií. CPAN Ratings
+(<a href="http://CPANratings.perl.org/">http://CPANratings.perl.org/</a>)
+pomocou ktorého sa dajú hodnotiť jednotlivé distribúcie. CPAN Other Tools -
+Diff a Grep.
+</p>
+
+<p>Linky: <a href="new-module.html">Ako na CPAN-like modul</a></p>
+
+<p class='signature'>3. Aug 2008<br/>Jozef</p>

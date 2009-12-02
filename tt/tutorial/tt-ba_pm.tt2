@@ -1,0 +1,57 @@
+[%
+META title       = "Generovanie Bratislava.pm.org pomocou Template Toolkit - TT";
+META description = "Generovanie Bratislava.pm.org pomocou Template Toolkit - TT";
+META keywords    = "Template Toolkit, statické, stránky, generované";
+%]
+[% TAGS <+ +> %]
+
+<h1>Generovanie Bratislava.pm.org pomocou Template Toolkit - TT</h1>
+
+<p>Bratislava.pm.org je na serveri uložená ako statická html stránka. HTML
+súbory sú však generované pomocou
+<a href="http://search.cpan.org/perldoc?Template">Template</a>.
+Tento Perl modul umožňuje vložiť špeciálne značky do textového súboru ktoré sú rozpoznamné
+a spracované. Predvolené sú <code>[% %]</code>, ale 
+dajú sa jednoducho predefinovať na iné, napríklad <code>&lt;? ?&gt;</code> pomocou <code>[% TAGS &lt;? ?&gt; %]</code>.
+</p>
+
+<p>Štandardné použitie Template Toolkit je v MVC frameworks. Kde sa požíva ako
+View ktorý je schopný vygenerovat XML, plain text, PDF, ... a samozrejme
+HTML. 
+</p>
+
+<p>Okrem priameho použitia v Perlovom programe sa dá Template Toolkit použiť
+aj z command line. Pomocout príkazu <code>tpage</code> sa dá zkonvertovať súbor
+obsahujúci TT značky (<code>.tt2</code>) na výsledný súbor (<code>.html</code>). Pomocou
+<code>ttree</code> sa dá skonvertovať celý "strom" súborov.
+</p>
+
+<p>Templates ktoré sú použité pre Bratislava.pm.org sú nachádzaju v
+<a href="https://cle.sk/repos/pub/www/tt-pm/">Subversion repository</a>. Tu sa nachádzajú
+dva súbory - <code>Makefile</code> a <code>tt.cfg</code> + tri adresáre - 
+<code>html</code>, <code>tt</code>, <code>tt-lib</code>.
+</p>
+
+<p>V <a href="https://cle.sk/repos/pub/www/tt-pm/tt/">tt/</a> sa nachádzajú "telá" stránok (<code>.tt2</code>)
+a statické súbory (<code>.css</code>, <code>.html</code>, <code>.jpg</code>, ...).
+V <a href="https://cle.sk/repos/pub/www/tt-pm/tt-lib/">tt-lib/</a> sa nachádza hlavička a päta stránok.  
+</p>
+
+<p>
+Samotné generovanie sa deje pomocou "<code>ttree -f tt.cfg</code>". Príkaz spracuje všetky
+<code>.tt2</code> súbory na
+<code>.html</code> + skopíruje všetky zvyšné súbory do <a href="https://cle.sk/repos/pub/www/tt-pm/html/">html/</a>
+adresára.
+</p>
+
+<p>
+<a href="https://cle.sk/repos/pub/www/tt-pm/html/">html/</a> adresár je zadefinovany ako
+<code>svn:external</code> ukazujúci na 
+<a href="https://cle.sk/repos/pub/www/pm">Subversion repository</a> ktoré obsahuje
+výsledné stránky. Takto sa dá pracovat na <code>*.tt2</code>, commit-ovať zmeny pričom zmeny
+ktoré sa prejavia na výslednej stránke od posledného zverejnenia sa dajú pozerať pomocu 
+"<code>svn diff</code>". Výsledný commit v <a href="https://cle.sk/repos/pub/www/tt-pm/html/">html/</a>
+sa spravý až keď je všetko ako má byť.
+</p>
+
+<p class='signature'>22. Apr 2008<br/>Jozef</p>

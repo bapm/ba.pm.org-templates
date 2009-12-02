@@ -1,0 +1,56 @@
+[%
+META title       = "Generating Bratislava.pm.org using Template Toolkit - TT";
+META description = "Generating Bratislava.pm.org using Template Toolkit - TT";
+META keywords    = "Template Toolkit, static, generated, pages";
+%]
+[% TAGS <+ +> %]
+
+<h1>Generating Bratislava.pm.org using Template Toolkit - TT</h1>
+
+<p>Bratislava.pm.org is stored as a static html page on server. But HTML
+files are generated using
+<a href="http://search.cpan.org/perldoc?Template">Template</a>.
+This Perl module allows to add special tags to a text file that are then parsed.
+By default the tags are <code>[% %]</code>, but can be easily changed, to
+for example <code>&lt;? ?&gt;</code>, by setting <code>[% TAGS &lt;? ?&gt; %]</code>.
+</p>
+
+<p>Standard usage of Template Toolkit is in MVC frameworks, where it is used
+as a View that can generate XML, plain text, PDF, ... and of course HTML.
+</p>
+
+<p>Except the direct usage in Perl script, Template Toolkit can be used also
+from command line. Using <code>tpage</code> we can convert files that have
+TT tags (<code>.tt2</code>) to a destination file (<code>.html</code>). Using
+<code>ttree</code> we can convert the whole file tree.
+</p>
+
+<p>Templates that are used to generate Bratislava.pm.org are located in 
+<a href="https://cle.sk/repos/pub/www/tt-pm/">Subversion repository</a>.
+Here we can find two files - <code>Makefile</code> and <code>tt.cfg</code> + three
+folders - <code>html</code>, <code>tt</code>, <code>tt-lib</code>.
+</p>
+
+<p>
+In <a href="https://cle.sk/repos/pub/www/tt-pm/tt/">tt/</a> are the page bodies (<code>.tt2</code>)
+and static files (<code>.css</code>, <code>.html</code>, <code>.jpg</code>, ...).
+In <a href="https://cle.sk/repos/pub/www/tt-pm/tt-lib/">tt-lib/</a> are the header and the footer
+of the pages.  
+</p>
+
+<p>
+The processing to HTML is done using "<code>ttree -f tt.cfg</code>". This
+command will take all <code>.tt2</code> files and transforms them to <code>.html</code>
++ copies all the rest of the files to <a href="https://cle.sk/repos/pub/www/tt-pm/html/">html/</a>.
+</p>
+
+<p>
+<a href="https://cle.sk/repos/pub/tt-pm/html/">html/</a> folder is defined as
+<code>svn:external</code> pointing to <a href="https://cle.sk/repos/pub/www/pm">Subversion repository</a>.
+This way we can work on templates commit them, see the result and the changes that will
+be made to the real site can be seen using "<code>svn diff</code>". Final commit
+in <a href="https://cle.sk/repos/pub/www/tt-pm/html/">html/</a> is made when everything
+is as it should be.
+</p>
+
+<p class='signature'>22. Apr 2008<br/>Jozef</p>

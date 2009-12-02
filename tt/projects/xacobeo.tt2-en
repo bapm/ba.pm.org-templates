@@ -1,0 +1,58 @@
+[%
+META title       = "Xacobeo XPath/XML GUI";
+META description = "Overview of Xacobeo XPath/XML GUI";
+META keywords    = "Perl, XML, XPath, GUI, view";
+%]
+
+<h1>Xacobeo</h1>
+
+<p>
+This program provides a simple graphical user interface (GUI) for
+executing XPath queries and seeing their results.
+</p>
+
+<p class="screenShots">
+<a href="[% relative_root %]xacobeo/screen-shot-06.png" title="application menu" class="thickbox" rel="gallery-xacobeo"><img src="[% relative_root %]xacobeo/screen-shot-06t.png" alt="application menu" /></a> 
+</p>
+
+<p>
+The GUI tries to provide all the elements that are needed in order to
+write, test and execute XPath queries without too many troubles. It displays
+the Document Object Model (DOM) and the namespaces used. The program registers
+the namespaces automatically and each element is displayed with it's associated
+namespaces. All is performed with the idea of being able of running an XPath
+query as soon as possible without having to fight with the document's namespaces
+and by seeing automatically under which namespace each element is.
+</p>
+
+<p>
+This program is not an XML editor, at least not at this point, it's meant
+to be used for constructing and executing XPath queries.
+</p>
+
+<p>
+Project <a href="http://code.google.com/p/xacobeo/">home page</a>,
+<a href="http://www.gnomefiles.org/app.php?soft_id=2446">GnomeFiles</a>,
+<a href="http://search.cpan.org/perldoc?Xacobeo">CPAN link</a>
+</p>
+
+<p>Development highlights</p>
+<ul>
+    <li><a href="http://perl.org/">Perl</a>+<a href="http://gtk2-perl.sourceforge.net/">GTK2</a>+<a href="http://search.cpan.org/perldoc?XML::LibXML">XML::LibXML</a></li>
+    <li>XML syntax highlighting (<a href="http://search.cpan.org/perldoc?Xacobeo::XS">XS implementation</a>)</li>
+    <li>XML DOM tree view</li>
+    <li>NS auto registration</li>
+    <li>XPath on-type syntax checking</li>
+</ul>
+
+<h3>Xacobeo screen shots</h3>
+<p class="screenShots">
+<a href="[% relative_root %]xacobeo/screen-shot-01.png" title="after load of XML file" class="thickbox" rel="gallery-xacobeo"><img src="[% relative_root %]xacobeo/screen-shot-01t.png" alt="after load of XML file" /></a> 
+<a href="[% relative_root %]xacobeo/screen-shot-02.png" title="double-click to DOM tree" class="thickbox" rel="gallery-xacobeo"><img src="[% relative_root %]xacobeo/screen-shot-02t.png" alt="double-click to DOM tree" /></a> 
+<a href="[% relative_root %]xacobeo/screen-shot-03.png" title="basic XPath results" class="thickbox" rel="gallery-xacobeo"><img src="[% relative_root %]xacobeo/screen-shot-03t.png" alt="basic XPath results" /></a> 
+<a href="[% relative_root %]xacobeo/screen-shot-04.png" title="non valid XPath highlighting" class="thickbox" rel="gallery-xacobeo"><img src="[% relative_root %]xacobeo/screen-shot-04t.png" alt="non valid XPath highlighting" /></a> 
+<a href="[% relative_root %]xacobeo/screen-shot-05.png" title="advanced XPath results" class="thickbox" rel="gallery-xacobeo"><img src="[% relative_root %]xacobeo/screen-shot-05t.png" alt="advanced XPath results" /></a> 
+</p>
+
+<p><a href="index.html">Other projects</a></p>
+

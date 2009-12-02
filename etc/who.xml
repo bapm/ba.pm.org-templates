@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ba:who PUBLIC "-//BRATISLAVA.PM.ORG//WHO 1.2//EN" "http://bratislava.pm.org/dtd/who-1.2.dtd">
+<ba:who xmlns:ba="http://bratislava.pm.org/dtd/who-1.2.dtd">
+
+<ba:monger>
+	<ba:id>jozef</ba:id>
+	<ba:name>Jozef Kutej</ba:name>
+	<ba:nick>jozef</ba:nick>
+	<ba:cpan>JKUTEJ</ba:cpan>
+	<ba:place>Viedeň</ba:place>
+	<ba:picture><![CDATA[http://bratislava.pm.org/images/whoiswho/jozef.jpg]]></ba:picture>
+	<ba:info xmlns="http://www.w3.org/1999/xhtml">
+		<p>Pascalu => PHP => Linux => AWK => Perl</p>
+		<p>To bola moja profesionálna "cesta". Väčšinu života som strávil v Bratislave
+		ale momentálne žijem aj so svojou rodinou vo Viedni kde pracujem ako
+		Perl developer pre firmu <a href="http://www.mobilemessagingsolutions.net/">mobile messaging solutions</a>.
+		</p>
+
+		<p>Živím si dva blogy. Jeden <a href="http://use.perl.org/~jozef/journal/">o Perle</a>
+		a jeden <a href="http://jozef.blog.root.cz/">o Linux-e</a>.
+		</p>
+	</ba:info>
+	<ba:geo>
+		<ba:latitude>48.21066</ba:latitude>
+		<ba:longitude>16.31476</ba:longitude>
+	</ba:geo>
+</ba:monger>
+
+<ba:monger>
+	<ba:id>potyl</ba:id>
+	<ba:name>Emmanuel Rodriguez</ba:name>
+	<ba:nick>potyl</ba:nick>
+	<ba:cpan>POTYL</ba:cpan>
+	<ba:email>emmanuel.rodriguez@gmail.com</ba:email>
+	<ba:place>Bratislava</ba:place>
+	<ba:picture><![CDATA[http://www.gravatar.com/avatar.php?gravatar_id=4671968e8b6e8c529f410aab4e276dd8&rating=G&size=80&default=http%3A%2F%2Fsearch.cpan.org%2Fs%2Fimg%2Fwho.jpg]]></ba:picture>
+	<ba:info xmlns="http://www.w3.org/1999/xhtml">
+		<p>
+		My name is Emmanuel Rodriguez Santiago and I was born in Montréal, Canada from
+		Spanish parents (so yes, I'ms both a Canadian and a Spanish citizen).
+		While I was still a young, my parents moved back to Galicia, Spain where I 
+		grew up. When I was about to start 3<sup>rd</sup> grade my parents returned to
+		Montréal where I have spent most of my life and met a nice Slovak girl. That's
+		until 2005, when I decided to move to Bratislava, Slovakia to join that nice
+		girl who's now my wife.
+		</p>
+
+		<p>
+		Living in different countries has it advantages. I have been in contact with
+		multiple cultures and I can speak quite a few languages: Spanish, French,
+		English, Galician and Slovak.
+		</p>
+	</ba:info>
+	<ba:geo>
+		<ba:latitude>48.218611</ba:latitude>
+		<ba:longitude>17.146397</ba:longitude>
+	</ba:geo>
+</ba:monger>
+
+<ba:monger>
+	<ba:id>porucik</ba:id>
+	<ba:name>Martin Čulák</ba:name>
+	<ba:nick>poručík</ba:nick>
+	<ba:place>Bratislava</ba:place>
+	<ba:geo>
+		<ba:latitude>48.14838</ba:latitude>
+		<ba:longitude>17.10731</ba:longitude>
+	</ba:geo>
+</ba:monger>
+
+<ba:monger>
+	<ba:id>jonathan</ba:id>
+	<ba:name>Jonathan Worthington</ba:name>
+	<ba:nick>jonathan</ba:nick>
+	<ba:cpan>JONATHAN</ba:cpan>
+	<ba:place>Bratislava</ba:place>
+	<ba:picture><![CDATA[http://bratislava.pm.org/images/whoiswho/jnthn.jpg]]></ba:picture>
+	<ba:info xmlns="http://www.w3.org/1999/xhtml">
+		<p>Som z Anglicka, ale teraz bývam na Slovensku. Pracujem na Rakudo Perl 6
+		  a Parrot projektoch. Cestujem rád, a často chodím na Perl konferencie. Keď
+		  nepracujem, rád chodím na pivo a na túry do hôr.
+		  <a href="http://www.jnthn.net/about.shtml">Viac o mne (po anglicky).</a></p>
+	</ba:info>
+	<ba:geo>
+		<ba:latitude>48.14838</ba:latitude>
+		<ba:longitude>17.10791</ba:longitude>
+	</ba:geo>
+</ba:monger>
+
+<ba:monger>
+	<ba:id>mrusko</ba:id>
+	<ba:name>Martin Rusko</ba:name>
+	<ba:place>Bratislava</ba:place>
+	<ba:geo>
+		<ba:latitude>48.14838</ba:latitude>
+		<ba:longitude>17.10671</ba:longitude>
+	</ba:geo>
+</ba:monger>
+	
+<ba:monger>
+	<ba:id>forcer</ba:id>
+	<ba:name>Rasto Vysoky</ba:name>
+	<ba:nick>forcer</ba:nick>
+	<ba:place>Bratislava</ba:place>
+	<ba:info xmlns="http://www.w3.org/1999/xhtml">
+		<p>pracujem pre HP(soitron) ako developer druhy rok. (s perlom mam aktivne skusenosti asi 3 roky)
+		V perle vytvaram najma databazove web-interfaces - napriklad live reporty a alebo importy z inych databaz.
+		Pouzivam ho aj v sukromi ako "lepidlo" na vsetko mozne.
+		</p>
+
+		<p>Chcel by som sa dalej zdokonalovat a priniest moje doterajsie vedomosti
+		a skusenosti s perlom dalsim ludom, takze velmi rad zodpovedam otazky
+		zaciatocnikom.
+		</p>
+	</ba:info>
+	<ba:geo>
+		<ba:latitude>48.12459</ba:latitude>
+		<ba:longitude>17.09372</ba:longitude>
+	</ba:geo>
+</ba:monger>
+
+<ba:monger>
+	<ba:id>jjanec</ba:id>
+	<ba:name>Jozef Janec</ba:name>
+	<ba:place>Bratislava</ba:place>
+	<ba:info xmlns="http://www.w3.org/1999/xhtml">
+		<p>sucasne HP (Soitron) programujem v perle asi tak ties 3 roky, zaoberam
+		sa skor spracovavanim dat, ako logy naplnanie databaz alebo nejake reporty,
+		a trochu aj programovanie stranok pomocou perlu (s/php/pl/g)
+		</p>
+		 
+		<p>moj maly sen v perle: vytvorenie comunicatora na baze DNS tunelovania ;))</p>
+		 
+		<p>nejake ine postranne vedomosti, aix, linux, hpux</p>			
+	</ba:info>
+	<ba:geo>
+		<ba:latitude>48.14838</ba:latitude>
+		<ba:longitude>17.10611</ba:longitude>
+	</ba:geo>
+</ba:monger>
+
+<ba:monger>
+	<ba:id>jjacko</ba:id>
+	<ba:name>Ján Jacko</ba:name>
+	<ba:place>Košice</ba:place>
+	<ba:info xmlns="http://www.w3.org/1999/xhtml">
+		<p>som studentom na TU v Kosiciach a s perlom som sa prvykrat stretol asi
+		pred pol rokom ked som mal spravit zopar skriptov na semestralny projekt
+		do skoly :) celkom ma to zaujalo a tak sa to so mnou taha aj dalej...
+		</p>
+	</ba:info>
+	<ba:geo>
+		<ba:latitude>48.72100</ba:latitude>
+		<ba:longitude>21.25835</ba:longitude>
+	</ba:geo>
+</ba:monger>
+
+<ba:monger>
+	<ba:id>manutara</ba:id>
+	<ba:name>Jacques Clouseau</ba:name>
+	<ba:place>Košice</ba:place>
+	<ba:info xmlns="http://www.w3.org/1999/xhtml">
+		<p>teoretický fyzik-matematik, zo <a href="http://www.saske.sk/">Slovenskej Akadémie Vied v Košiciach</a>.
+		</p>
+	</ba:info>
+	<ba:geo>
+		<ba:latitude>48.72100</ba:latitude>
+		<ba:longitude>21.25775</ba:longitude>
+	</ba:geo>
+</ba:monger>
+
+<ba:monger>
+	<ba:id>rfordinal</ba:id>
+	<ba:name>Roman Fordinal</ba:name>
+	<ba:nick>rfordinal</ba:nick>
+	<ba:cpan>comsultia</ba:cpan>
+	<ba:place>Bratislava</ba:place>
+	<ba:picture><![CDATA[http://bratislava.pm.org/images/whoiswho/rfordinal.jpg]]></ba:picture>
+	<ba:info xmlns="http://www.w3.org/1999/xhtml">
+		<p><a href="http://cyclone3.org/">Cyclone3</a> manažér.</p>
+		<p><a href="http://blog.cyclone3.org/rfordinal/index.html">Blog</a></p>
+	</ba:info>
+	<ba:geo>
+		<ba:latitude>48.14838</ba:latitude>
+		<ba:longitude>17.10911</ba:longitude>
+	</ba:geo>
+</ba:monger>
+
+<ba:monger>
+	<ba:id>skupko</ba:id>
+	<ba:name>Peter Viskup</ba:name>
+	<ba:nick>skupko</ba:nick>
+	<ba:info xmlns="http://www.w3.org/1999/xhtml">
+		<p>S Perlom mam skusenosti od roku 2007. Pisal som v nom svoju diplomovu
+		pracu 'Perl-based Network Traffic Generator' [1] a zopar nepodstatnych
+		skriptov. Ak raz budem mat dost volneho casu, tak 'pbntg' dotiahnem do
+		pouzitelneho stavu  :-) . Som zaciatocnikom, ale rad sa zdokonalim ;-) .
+		</p>
+		<p>[1] - PBNTG - <a href="http://sourceforge.net/projects/pbntg">http://sourceforge.net/projects/pbntg</a></p>
+	</ba:info>
+</ba:monger>
+
+<ba:monger>
+	<ba:id>mj41</ba:id>
+	<ba:name>Michal Jurosz</ba:name>
+	<ba:nick>mj41</ba:nick>
+	<ba:info xmlns="http://www.w3.org/1999/xhtml">
+		<p><a href="http://taptinder.org/">TapTinder</a> + <a href="http://perl6.cz/">perl6.cz</a></p>
+	</ba:info>
+	<ba:geo>
+		<ba:latitude>49.19106</ba:latitude>
+		<ba:longitude>16.61142</ba:longitude>
+	</ba:geo>
+</ba:monger>
+
+</ba:who>
+

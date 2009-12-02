@@ -1,0 +1,2 @@
+[% error_msg = "Email nebol poslaný, prosím vyskúšajte neskôr.<br/>Email send error, please try again later." %]
+[% PROCESS contact.tt2 %]

@@ -1,0 +1,43 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bratislava.pm.org 0.01\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;"
+
+#: src/js/05_thickbox-3.1.js:86 tt/js/thickbox-3.1.js:86
+msgid "Next"
+msgstr "Ďaľej"
+
+#: src/js/05_thickbox-3.1.js:90 tt/js/thickbox-3.1.js:90
+msgid "Prev"
+msgstr "Späť"
+
+#: src/js/05_thickbox-3.1.js:94 tt/js/thickbox-3.1.js:94
+#, c-format
+msgid "Image %d"
+msgid_plural "Image %d"
+msgstr[0] "Obrázok %d"
+msgstr[1] "Obrázok %d"
+msgstr[2] "Obrázok %d"
+
+#: src/js/05_thickbox-3.1.js:94 tt/js/thickbox-3.1.js:94
+#, c-format
+msgid "of %d"
+msgid_plural "of %d"
+msgstr[0] "z %d"
+msgstr[1] "z %d"
+msgstr[2] "z %d"
+
+#: src/js/05_thickbox-3.1.js:128 tt/js/thickbox-3.1.js:128
+msgid "Close"
+msgstr "Zatvoriť"
+
+#: src/js/05_thickbox-3.1.js:128 tt/js/thickbox-3.1.js:128
+msgid "close"
+msgstr "zatvoriť"
+
+#: src/js/05_thickbox-3.1.js:128 tt/js/thickbox-3.1.js:128
+msgid "or Esc Key"
+msgstr "alebo stlačiť Esc klávesu"

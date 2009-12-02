@@ -1,0 +1,36 @@
+[%
+META title       = "Jeff's View: on Science and Scientists";
+META description = "Review na knihu 'Jeff's View: on Science and Scientists'";
+META keywords    = "review, kniha";
+%]
+
+<div class="cover"><a href="http://www.amazon.com/gp/product/044452133X?ie=UTF8&amp;tag=bratperlmong-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=044452133X"><img src="[% relative_root %]images/jeff-s-view.jpg" alt="cover" /></a><img src="http://www.assoc-amazon.com/e/ir?t=bratperlmong-20&amp;l=as2&amp;o=1&amp;a=044452133X" width="1" height="1" alt="" style="border:none !important; margin:0px !important;" /></div>
+<pre>
+Book Review : <a href="http://www.amazon.com/gp/product/044452133X?ie=UTF8&amp;tag=bratperlmong-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=044452133X">Jeff's View: on Science and Scientists</a>
+Author(s)   : Gottfried Schatz
+Publisher   : Elsevier Science; 1 edition (December 2, 2005)
+ISBN        : <a href="http://www.amazon.com/gp/product/044452133X?ie=UTF8&amp;tag=bratperlmong-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=044452133X">044452133X</a>
+Pages       : 192
+Language    : English
+</pre>
+
+<h1>Jeff-ov pohľad na vedu a vedcov</h1>
+
+<p>Originálne opublikované ako stĺpec v FEBS Letter journal, týchto 17 esejí
+vyšlo neskôr ako kniha. Jeff strávil celý život biochemickým výskumom a tieto
+eseje sú práve o ňom a o ľuďoch ktorí ho robia. Aj keď ja niesom
+vedec, ale programátor, našiel som v týchto esejách veľa zaujímavých myšlienok
+a paralel so svetom biznisu.
+</p>
+
+<p>Viac o knihe aj s citátmi z knihy je v <a href="[% lang_url %]">anglickej verzií</a>.</p>
+
+<div class="score">
+<pre>4/4</pre>
+<img src="[% content_root %]images/plody-borievky.jpg" alt="1" />
+<img src="[% content_root %]images/plody-borievky.jpg" alt="1" />
+<img src="[% content_root %]images/plody-borievky.jpg" alt="1" />
+<img src="[% content_root %]images/plody-borievky.jpg" alt="1" />
+</div>
+
+<p class='signature'>31. Jan 2008<br/>Jozef</p>

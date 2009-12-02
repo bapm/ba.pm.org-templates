@@ -1,0 +1,60 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:tns="http://bratislava.pm.org/dtd/events-1.0.dtd"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        targetNamespace="http://bratislava.pm.org/dtd/events-1.0.dtd"
+        elementFormDefault="qualified"
+        attributeFormDefault="qualified"
+>
+
+<!-- <import namespace="http://www.w3.org/1999/xhtml" schemaLocation="http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd" /> -->
+<import namespace="http://www.w3.org/1999/xhtml" schemaLocation="xhtml1-strict.xsd" />
+
+<element name="events" type="tns:EventsType">
+    <unique name="uniqueEventLink">
+        <selector xpath="tns:event/tns:link"/>
+        <field xpath="."/>
+    </unique>
+    <unique name="uniqueEventID">
+        <selector xpath="tns:event/tns:id"/>
+        <field xpath="."/>
+    </unique>
+</element>
+
+<complexType name="EventsType">
+    <sequence>
+        <element name="event" type="tns:EventType" maxOccurs="unbounded" />
+    </sequence>
+</complexType>
+
+<complexType name="EventType">
+    <sequence>
+        <element name="title" type="string" />
+        <element name="link" type="anyURI" />
+        <element name="subject" type="string" />
+        <element name="creator" type="string" />
+        <element name="date" type="string" />
+        <element name="id" type="string" />
+        <element name="description">
+<!--
+            <complexType mixed="true">
+                <choice maxOccurs="unbounded">
+                    <element ref="xhtml:p" />
+                    <element ref="xhtml:ul" />
+                    <element ref="xhtml:div" />
+                </choice>
+            </complexType>
+-->
+            <complexType mixed="true">
+                <sequence>
+                    <any
+                        namespace="http://www.w3.org/1999/xhtml"
+                        minOccurs="0"
+                        maxOccurs="unbounded"
+                    />
+                </sequence>
+            </complexType>
+        </element>
+    </sequence>
+</complexType>
+
+</schema>

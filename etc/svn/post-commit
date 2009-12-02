@@ -1,0 +1,15 @@
+#!/bin/sh
+
+REPOS="$1"
+REV="$2"
+
+/usr/bin/svnnotify -r $REV -C -d -H HTML::ColorDiff -p $REPOS -f 'svn@cle.sk' \
+	--subject-prefix "[$REV] `svnlook author -r $REV $REPOS`" \
+	--to-regex-map 'someone@somewhere.net=^(www/pm|www/tt-pm)' \
+	--to-regex-map 'someoneelse@somewhereelse.net=^(www/pm|www/tt-pm)' 
+
+# update bratislava.pm.org site after commit
+if [ "`svnlook changed -r $REV $REPOS | grep '^....www/pm'`" ]; then
+	sudo -H -u jk /data/bin/update-ba.pm.org;
+fi
+

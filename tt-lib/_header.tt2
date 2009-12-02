@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>[% template.title || 'Bratislava Perl Mongers' %]</title>
+	<link rel="stylesheet" href="[% content_root %]stylesheets/style.css" type="text/css" media="screen" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="content-language" content="[% lang %]" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<meta name="author" content="different" />
+	<meta name="copyright" content="" />
+	<meta name="description" content="[% template.description %]" />
+	<meta name="keywords" content="[% template.keywords %]" />
+	<meta name="mssmarttagspreventparsing" content="true" />
+	<meta name="robots" content="index, follow, noarchive" />
+	<meta name="revisit-after" content="7 days" />
+	<link rel="alternate" title="Bratislava.pm.org - news" href="[% root_path %]news.rdf" type="application/rss+xml" />
+	<link rel="shortcut icon" href="[% content_root %]favicon.ico" />
+</head>
+<body>
+	<div id="header">
+	<div id="header_inside">
+		<h1><a href="[% root_path %]index.html">Bratislava <span>Perl Mongers</span></a></h1>
+[%
+	##
+	# Find which top menu item is the one that should be selected
+	top_menu = template.top_menu || template.name.replace('\.tt2(-..)?$', '');
+
+	# Special cases for pages that have a deep path
+	IF top_menu.match('^presentation/');
+		top_menu = 'events';
+	ELSIF top_menu.match('^(review/|tutorial/|projects/|who|store)');
+		top_menu = 'other';
+	ELSIF top_menu.match('^(cgi/email)');
+		top_menu = 'contact';
+	END;
+
+
+	##
+	# Links on the top menu (use an array for the order)
+	links = [
+
+		{
+			page  => 'index',
+			label => 'PM',
+		},
+
+		{
+			page  => 'events',
+			label => 'Udalosti',
+			en    => 'Events',
+		},
+
+		{
+			page  => 'other',
+			label => 'Ostatné',
+			en    => 'Other',
+		},
+
+		{
+			page  => 'links',
+			label => 'Linky',
+			en    => 'Links'
+		},
+
+		{
+			page  => 'job',
+			label => 'Job',
+		},
+
+		{
+			page  => 'contact',
+			label => 'Kontakt',
+			en    => 'Contact',
+		},
+
+	];
+
+-%]
+
+		<ul>
+			[% FOREACH link IN links.reverse %]
+				<li>
+					<a [% IF top_menu == link.page %] class="active"[% END %]
+					href="[% "${root_path}${link.page}.html" %]">[% link.$lang || link.label %]</a>
+				</li>
+			[% END %]
+		</ul>		
+
+	</div>
+	</div>
+

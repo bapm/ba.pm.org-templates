@@ -1,0 +1,49 @@
+[%
+META title       = "Perl + D-Bus";
+META description = "Perl D-Bus introduction presentation";
+META keywords    = "Perl, D-Bus, examples, intro, presentation";
+%]
+
+<!--
+
+D-Bus
+
+-->
+
+<h1>D-Bus</h1>
+<p>This presentation shows how to use D-Bus from Perl. It provides sample code
+that demontrates the various ways to use D-Bus from within Perl programs.
+</p>
+
+<p>D-Bus is a new inter process communication (IPC) system that's available in
+almost all Linux distributions. It consists of a message bus daemon that allow
+applications to communicate with one another through remove methods invocation,
+signals and properties.</p>
+
+<p>
+Files:
+</p>
+
+<ul>
+	<li><a href="[% relative_root %]dbus-pidgin.pl">dbus-pidgin.pl</a> - Enable a Pidgin account</li>
+	<li><a href="[% relative_root %]dbus-list-services.pl">dbus-list-services.pl</a> - List the D-Bus services available</li>
+	<li><a href="[% relative_root %]dbus-introspect.pl">dbus-introspect.pl</a> - Introspect a D-Bus object</li>
+
+	<li><a href="[% relative_root %]DBus/Test.pm">DBus/Test.pm</a> - A simple Test object to be shared through D-Bus</li>
+	<li><a href="[% relative_root %]dbus-test-service.pl">dbus-server.pl</a> - Simple service for the Test service</li>
+	<li><a href="[% relative_root %]dbus-test-client.pl">dbus-client.pl</a> - Simple client for the Test service</li>
+
+
+	<li><a href="[% relative_root %]DBus/FileWatcher.pm">DBus/FileWatcher.pm</a> - A FileWatcher object to be shared through D-Bus</li>
+	<li><a href="[% relative_root %]dbus-file-watcher-service.pl">dbus-file-watcher-service.pl</a> - Service that shares the FileWatcher object through Glib</li>
+	<li><a href="[% relative_root %]dbus-file-watcher-client.pl">dbus-file-watcher-client.pl</a> - Client for the FileWatcher service</li>
+
+	<li><a href="[% relative_root %]dbus-file-watcher2-service.pl">dbus-file-watcher2-service.pl</a> - Service that shares the FileWatcher object through the Reactor</li>
+
+</ul>
+
+<p>
+Presentation in <a href='[% relative_root %]../dbus/perl-dbus.odp'>OpenOffice</a> and <a href='[% relative_root %]../dbus/perl-dbus.pdf'>PDF</a> format.<br/>
+All files <a href='[% relative_root %]../perl-dbus-presensation.tar.gz'>perl-dbus-presensation.tar.gz</a>
+</p>	
+

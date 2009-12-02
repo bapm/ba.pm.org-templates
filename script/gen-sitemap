@@ -1,0 +1,105 @@
+#!/usr/bin/perl
+
+=head1 NAME
+
+gen-sitemap - generate Google sitemap.xml
+
+=head1 SYNOPSIS
+
+	gen-sitemap
+
+=head1 DESCRIPTION
+
+=cut
+
+
+use strict;
+use warnings;
+
+use Getopt::Long;
+use Pod::Usage;
+use Template;
+use Template::Constants qw( :debug );
+use File::stat;
+use File::Find::Rule;
+use List::MoreUtils 'any';
+use DateTime;
+
+my @CHANGING_PAGES = qw(
+	^(en/)?events.html$
+	^(en/)?planet/
+	\.rdf$
+);
+my @TOP_PAGES = qw(
+	^(en/)?events.html$
+	\.rdf$
+	^projects/
+	^presentation/
+	^tutorial/
+	^review/
+);
+my @SKIP_PAGES = qw(
+	^presentation/dynamic-static/moderny-web
+	^(en/)?cgi/
+);
+
+exit main();
+
+sub main {
+	my $help;
+	GetOptions(
+		'help|h' => \$help,
+	) or pod2usage;
+	pod2usage if $help;
+	
+	my @web_files =
+		map { detailed_file_info($_) }
+		File::Find::Rule->file()
+		->name( '*.html', '*.rdf' )
+		->in('html/')
+	;
+	
+    my $config = {
+        INCLUDE_PATH  => '.',
+        POST_CHOMP    => 1,
+        DEBUG         => DEBUG_UNDEF,
+    };
+    my $vars = {
+		'web_files' => \@web_files,
+    };
+    my $template = Template->new($config);
+	$template->process(\*DATA, $vars, 'html/sitemap.xml')
+		|| die $template->error();
+	
+	return 0;
+}
+
+sub detailed_file_info {
+	my $filename = shift;
+	my $lastmod  = DateTime->from_epoch(epoch => stat($filename)->mtime)->ymd;
+	
+	$filename = substr($filename, length('html/'));
+	
+	return ()
+		if (any { $filename =~ m/$_/ } @SKIP_PAGES);
+	
+	return {
+		'path'       => $filename,
+		'lastmod'    => $lastmod,
+		'changefreq' => (any { $filename =~ m/$_/ } @CHANGING_PAGES) ? 'weekly' : 'monthly',
+		'priority'   => (any { $filename =~ m/$_/ } @TOP_PAGES) ? 1 : 0.5,
+	}
+}
+
+__DATA__
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+[% FOREACH web_file IN web_files %]
+<url>
+    <loc>http://bratislava.pm.org/[% web_file.path %]</loc>
+    <lastmod>[% web_file.lastmod %]</lastmod>
+    <changefreq>[% web_file.changefreq %]</changefreq>
+    <priority>[% web_file.priority %]</priority>
+</url>
+[% END %]
+</urlset>

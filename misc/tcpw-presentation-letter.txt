@@ -1,0 +1,20 @@
+
+7. a 8. novembra sa uskutoční Twin City Perl Workshop. Chceli by sme Vás 
+srdečne pozvať na túto Perl udalosť organizovanú na Slovensku.
+
+V piatok, 7. novembra, Vienna.pm (http://vienna.pm.org/) vo Viedni 
+privíta perlových programátorov z celého sveta. Udalosť bude pokračovať 
+v sobotu, 8. novembra v Bratislave pod záštitou Bratislava.pm 
+(http://bratislava.pm.org/). Každý deň bude začínať prednáškami v 
+lokálnom jazyku (Nemčina a Slovenčina), nasledované prednáškami v 
+angličtine poobede. Večery strávime spoločne v reštauráciách v blízkosti prednáškovej miestnosti.
+
+Hľadáme ľudí čo majú záujem o Perl, alebo sa proste chcú naučiť niečo nové!
+
+Prečo? Lebo - http://ba.pm.org/b/cool
+
+Viac informácií a registrácia je možná na http://ba.pm.org/go/workshop
+
+S pozdravom,
+Organizátori TCPW2008
+

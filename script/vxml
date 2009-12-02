@@ -1,0 +1,189 @@
+#!/usr/bin/perl
+
+=head1 NAME
+
+vxml - check if the xml is valid
+
+=head1 SYNOPSIS
+
+    vxml [--ignore filename3] filename [filename2 folder ...]
+    
+        --ignore    comman separated list of filenames that should be skipped
+                    for validation
+
+=head1 DESCRIPTION
+
+Checks the given xml file (or folder of xml files) if it's a well formed
+and valid xml.
+
+=cut
+
+
+use strict;
+use warnings;
+
+use Getopt::Long;
+use Pod::Usage;
+use XML::LibXML;
+use File::Find::Rule;
+use Test::More;
+use Test::Exception;
+use List::MoreUtils 'none', 'uniq';
+use WWW::Mechanize;
+use File::Slurp 'read_file';
+use File::Basename 'dirname';
+
+exit main();
+
+sub main {
+    my $help;
+    my $ignore = '';
+    my $verbose = 0;
+    GetOptions(
+        'help|h'    => \$help,
+        'ignore=s'  => \$ignore,
+        'verbose|v' => \$verbose,
+    ) or pod2usage;
+    pod2usage()
+        if $help;
+    
+    pod2usage()
+        if @ARGV == 0;
+    
+    if (not $verbose) {
+        Test::More->builder->output('/dev/null');
+    }
+        
+    # files to ignore, split by comma and trim filenames
+    my @files_to_ignore = map {
+        s/^\s*//xms;
+        s/\s*$//xms;
+        $_
+    } split(/\s*,\s*/, $ignore);
+    
+    # find all files to validate
+    my @files;
+    foreach my $filename (@ARGV) {
+        if (-f $filename) {
+            push @files, $filename;
+        }
+        elsif (-d $filename) {
+            # find all xml, html and rds files in given folder
+            @files = File::Find::Rule
+                        ->or(
+                            # ignore .svn, .git, CVS folders
+                            File::Find::Rule
+                                ->directory
+                                ->name('.svn', '.git', 'CVS')
+                                ->prune
+                                ->discard
+                            ,
+                            # find all xml documents
+                            File::Find::Rule
+                                ->file
+                                ->name('*.xml', '*.html', '*.rdf')
+                        )->in($filename);
+        }               
+    }
+    
+    # filter out files to ignore
+    @files = uniq grep {
+        my $filename = $_;
+        if ((not @files_to_ignore) or (none { $_ eq $filename } @files_to_ignore)) {
+            1;
+        }
+        else {
+            0;
+        };
+    } @files;
+    
+    my @linked_files = get_all_relative_linked_files(grep { $_ =~ /\.html$/xms } @files);
+    
+    plan 'tests' => scalar @files + scalar @linked_files;
+    existing_files(@linked_files);
+    valid_xml_files(@files);
+
+    return 0;
+}
+
+sub valid_xml_files {
+    foreach my $filename (@_) {
+        # parse and validate
+        my $parser = XML::LibXML->new;
+        $parser->validation(1);
+        lives_ok(
+            sub { $parser->parse_file($filename) },
+            'validate '.$filename
+        );
+    }
+    
+    return;
+}
+
+my %link_location;
+sub get_all_relative_linked_files {
+    my @html_files = @_;
+        
+    my @files;
+    foreach my $filename (@html_files) {
+        my $folder = dirname($filename);
+        
+        my $mech = WWW::Mechanize->new();
+        $mech->{content} = read_file($filename);
+        $mech->{base}    = 'http://X/'.$folder;
+        
+        my @new_files =
+            map { remove_up_paths($_) }                         # remove /../
+            map { s(/{2,})(/)g; $_ }                            # replace // by single /
+            map { $_ =~ m{/$} ? $_.'index.html' : $_ }          # replace trailing / by /index.html
+            map { $folder.'/'.$_ }                              # add folder name
+            map { s/#\w+$//; $_ }                               # remove anchors (xyz.html#en)
+            map { $_->url }                                     # keep just url
+            grep { $_->url !~ m{^(http://|https://|\#|mailto:|javascript:)}xms }
+                                                                # grep for relative links
+            ( $mech->links, $mech->images )
+        ;
+        
+        foreach my $link (@new_files) {
+            $link_location{$link} ||= [];
+            push @{$link_location{$link}}, $filename;
+        }
+        
+        push @files, @new_files;
+    }
+
+    return uniq sort @files;
+}
+
+sub remove_up_paths {
+    my $path = shift;
+    
+    return
+        if not defined $path;
+    
+    my @folders = split '/', $path;
+    my @new_folders;
+    foreach my $folder (@folders) {
+        if ($folder eq '..') {
+            pop @new_folders;
+        }
+        elsif ($folder eq '.') {
+            # just ignore
+        }
+        else {
+            push @new_folders, $folder;
+        }
+    }
+    
+    return join '/', @new_folders;
+}
+
+sub existing_files {
+    my @files = @_;
+    
+    foreach my $filename (@files) {
+        ok(-f $filename, 'check if exists '.$filename)
+            or diag 'in file(s): '.join(', ', @{$link_location{$filename}})
+    }
+    
+}

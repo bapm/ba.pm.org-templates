@@ -1,0 +1,40 @@
+[%
+META title       = "Projekty";
+META description = "Projekty Bratislava Perl Mongerov";
+META keywords    = "Perl, projekty";
+%]
+
+<h1>Projekty Bratislava Perl Mongerov</h1>
+
+<p><a href="[% root_path %]who.html#potyl">Emmanuel Rodriguez</a></p>
+<ul>
+    <li><a href="xacobeo.html">Xacobeo</a></li>
+    <li><a href="http://search.cpan.org/~potyl/">rôzne CPAN moduly</a></li>
+    <li><a href="http://github.com/potyl/">a zvyšný OpenSource</a></li>
+    <li><a href="http://gitorious.com/~potyl/libchamplain/potyl-perl">Perl bindings pre libchamplain</a></li>
+</ul>
+
+<p><a href="[% root_path %]who.html#jonathan">Jonathan Worthington</a></p>
+<ul>
+    <li><a href="http://rakudo.org/">Perl 6</a> (Rakudo Perl)</li>
+    <li><a href="http://search.cpan.org/~jonathan/">rôzne CPAN moduly</a></li>
+    <li><a href="http://github.com/jnthn/blizkost/">blízkosť (Perl 5 pre Parrot</a>)</li>
+</ul>
+
+<p><a href="[% root_path %]who.html#jozef">Jozef Kutej</a></p>
+<ul>
+    <li><a href="http://search.cpan.org/~jkutej/">rôzne CPAN moduly</a></li>
+    <li><a href="http://github.com/jozef/">a zvyšný OpenSource</a></li>
+</ul>
+
+<p><a href="[% root_path %]who.html#skupko">Peter Viskup</a></p>
+<ul>
+    <li><a href="http://sourceforge.net/projects/pbntg">Perl-based Network Traffic Generator</a></li>
+</ul>
+
+<p><a href="[% root_path %]who.html#rfordinal">Roman Fordinal</a></p>
+<ul>
+    <li><a href="cyclone3.html">Cyclone3 CMS</a></li>
+    <li><a href="http://open.comsultia.com/docbook2odf/">Docbook2odf</a> (perl+xslt)</li>
+    <li><a href="http://search.cpan.org/dist/SVGraph/">SVGraph</a></li>
+</ul>

@@ -1,0 +1,49 @@
+[%
+META title       = "Cyclone3";
+META description = "Cyclone3 CMS overview";
+META keywords    = "Cyclone3, CMS";
+%]
+
+<h1>Cyclone3</h1>
+
+<p>Features</p>
+
+<ul>
+	<li>developed since 1999 by <a href="http://www.comsultia.com/">Comsultia</a></li>
+	<li>since 2006 Open Source</li>
+	<li><a href="http://www.markiza.sk/">used by most popular TV channel</a> in Slovakia</li>
+	<li>administration interface using <a href="http://en.wikipedia.org/wiki/Xul">XUL GUI</a></li>
+	<li>SOAP calls as interface between GUI and Cyclone3 server</li>
+	<li>URL modeling</li>
+	<li>data kept away from structure or design</li>
+	<li>build in <a href="http://en.wikipedia.org/wiki/OpenDocument">ISO Open Document</a> and <a href="http://en.wikipedia.org/wiki/Docbook">DocBook</a> format imports/exports</li>
+	<li>Pod -> DocBook -> XHTML transformations</li>
+	<li>advanced run time exception notification</li>
+	<li>video encoding, streaming =&gt; serving</li>
+	<li>fine grade ACL</li>
+	<li>build for cluster solutions</li>
+	<li>multi-lingual</li>
+	<li>commercial support</li>
+</ul>
+
+<p><a href="http://www.cyclone3.org/">Home page</a></p>
+
+<p>Development highlights</p>
+
+<ul>
+	<li>Full Unicode Support (database, publishing, configuration)</li>
+	<li>multi level caching (<a href="http://www.danga.com/memcached/">memcached</a>)</li>
+	<li>CMS applications are prefixed and organized by numbers (fast and easy navigation)</li>
+	<li>domains and sub domains + root paths of them organized via folder structure (one installation for multiple domains)</li>
+	<li>domains and subdomains + root paths setting inheritance </li>
+	<li>SQL logging with replay for backward analyzing and tuning</li>
+	<li>scheduled pre-caching</li>
+	<li>scheduled (to post phone) SQL queries</li>
+	<li>suggesting database schema ALTER TABLE commands based on current database and schema definition in .sql file</li>
+	<li>SVG to plot graphs</li>
+	<li>clever image cropping (with face detection)</li>
+	
+</ul>
+
+
+<p><a href="index.html">Other projects</a></p>

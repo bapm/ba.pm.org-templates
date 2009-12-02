@@ -1,0 +1,93 @@
+[%
+META title       = "jednoduché Debian repository";
+META description = "Ako na jednoduché Debian repository.";
+META keywords    = "debian, deb, repo, repository, dpkg-scanpackages, dpkg-scansources, apt-ftparchive";
+%]
+
+<h1>jednoduché Debian repository</h1>
+
+<p>Tento návod bude o tom ako sa dá spraviť jednoduché Debian
+repository. Použité budú:
+<code>dpkg-scanpackages, dpkg-scansources, apt-ftparchive, gpg</code>
+a <code>Makefile</code>. Adresárová štruktúra je nasledovná:
+</p>
+
+<pre>
+debian-simple-repo
+|-- <a href="[% relative_root %]debian-simple-repo/Makefile">Makefile</a>
+|-- <a href="[% relative_root %]debian-simple-repo/Release.conf">Release.conf</a>
+`-- unstable    # generované súbory
+    |-- Packages
+    |-- Packages.bz2
+    |-- Packages.gz
+    |-- Release
+    |-- Release.gpg
+    |-- Sources
+    |-- Sources.bz2
+    `-- Sources.gz
+</pre>
+
+<h3>Makefile</h3>
+
+<pre>
+all: repository
+
+repository:
+	dpkg-scanpackages unstable /dev/null > unstable/Packages
+	dpkg-scansources  unstable /dev/null > unstable/Sources
+	
+	bzip2 -c9 unstable/Packages &gt; unstable/Packages.bz2
+	gzip -c9 unstable/Packages &gt; unstable/Packages.gz
+	bzip2 -c9 unstable/Sources  &gt; unstable/Sources.bz2
+	gzip -c9 unstable/Sources  &gt; unstable/Sources.gz
+	
+	apt-ftparchive -c=Release.conf release unstable > unstable/Release
+	-rm unstable/Release.gpg
+	gpg -abs -o unstable/Release.gpg unstable/Release
+
+clean:
+	rm -f unstable/Packages* unstable/Sources* unstable/Release*
+</pre>
+
+<h3>Release.conf</h3>
+
+<pre>
+APT::FTPArchive::Release::Origin "your@email";
+APT::FTPArchive::Release::Label "Test repository";
+APT::FTPArchive::Release::Suite "unstable";
+APT::FTPArchive::Release::Architectures "i386 source";
+APT::FTPArchive::Release::Components "main";
+</pre>
+
+<h3>generovanie</h3>
+
+<p>Všetky <code>*.deb, *.dsc, *.diff.gz, *.changes, *.orig.tar.gz</code>
+treba skopírovať do <code>unstable/</code> adresára a spustiť príkaz `make`.
+Tak sa vygenerujú <code>unstable/Packages*, unstable/Sources*, unstable/Release*</code>
+súbory. Potom už len celý adresár ako je vyuploadovať na web/ftp server. 
+</p>
+
+<h3>použitie</h3>
+
+<p>
+<code>/etc/apt/sources.list</code> súbor na cieľovom Debian počítači/serveri
+treba upraviť a pridať použitý kľúč pomocou `apt-key add`.
+</p>
+
+<h3>sources.list</h3>
+
+<pre>
+deb http://your.hostname/some/folder/ unstable/
+deb-src http://your.hostname/some/folder/ unstable/
+</pre>
+
+<h3>keď treba viac</h3>
+
+<p>Pre robustnejšie riešenie ktoré by pripomínalo distribučné repositories
+sa dá použiť <a href="http://packages.debian.org/lenny/reprepro">reprepro</a>.
+<a href="http://www.debian-administration.org/articles/286">Setting up
+your own APT repository with upload support</a> - je dobrý článok o tom
+ako na to.
+</p>
+
+<p class='signature'>7 Júl 2009<br/>Jozef</p>

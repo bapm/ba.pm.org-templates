@@ -1,0 +1,11 @@
+
+<div id="miniMenu">
+<ul>
+	[% IF lang == 'en' %]
+	<li><a href="[% lang_url %]"><img src="[% content_root %]images/sk-small-flag.png" alt="sk" /> sk</a></li>
+	[% ELSE %]
+	<li><a href="[% lang_url %]"><img src="[% content_root %]images/uk-small-flag.png" alt="en" /> en</a></li>
+	[% END %]
+	<li class="first" ><a id="feedbackLink" href="[% root_path %]contact.html">Feedback</a></li>	
+</ul>
+</div>

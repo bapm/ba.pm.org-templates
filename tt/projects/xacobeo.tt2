@@ -1,0 +1,57 @@
+[%
+META title       = "Xacobeo XPath/XML GUI";
+META description = "O Xacobeo XPath/XML GUI prehliadači";
+META keywords    = "Perl, XML, XPath, GUI, view";
+%]
+
+<h1>Xacobeo</h1>
+
+<p>
+je program ktorý pomocou jednoduchého GUI zobrazuje XML a vie spúšťať
+XPath queries a zobraziť ich výsledok.
+</p>
+
+<p class="screenShots">
+<a href="[% relative_root %]xacobeo/screen-shot-06.png" title="aplikačné menu" class="thickbox" rel="gallery-xacobeo"><img src="[% relative_root %]xacobeo/screen-shot-06t.png" alt="aplikačné menu" /></a> 
+</p>
+
+<p>
+Xacobeo poskytuje prostredie aby sa bez problémov a jednoducho dali písať,
+testovať a spúšťať XPath queries. Vie zobraziť Document Object Model (DOM)
+a namespaces ktoré sú použité. Program automaticky zaregistruje všetky
+namespaces a každý element je zobrazený so svojím namespace. Umožňuje
+rýchly prehľad o XML dokumente.
+</p>
+
+<p>
+Xacobeo nieje XML editor, aspoň nie teraz. Jeho účelom je písanie a spúšťanie
+XPath queries.
+</p>
+
+<p>
+<a href="http://code.google.com/p/xacobeo/">Domovská stránka</a> projektu,
+<a href="http://www.gnomefiles.org/app.php?soft_id=2446">GnomeFiles</a>,
+<a href="http://search.cpan.org/perldoc?Xacobeo">CPAN link</a>
+</p>
+
+<h3>Vychytávky</h3>
+<ul>
+    <li><a href="http://perl.org/">Perl</a>+<a href="http://gtk2-perl.sourceforge.net/">GTK2</a>+<a href="http://search.cpan.org/perldoc?XML::LibXML">XML::LibXML</a></li>
+    <li>XML syntax highlighting (<a href="http://search.cpan.org/perldoc?Xacobeo::XS">XS implementation</a>)</li>
+    <li>XML DOM tree view</li>
+    <li>NS auto registrácia</li>
+    <li>XPath on-type syntax checking</li>
+</ul>
+
+
+<h3>Xacobeo screen shots</h3>
+<p class="screenShots">
+<a href="[% relative_root %]xacobeo/screen-shot-01.png" title="po nahraní XML súboru" class="thickbox" rel="gallery-xacobeo"><img src="[% relative_root %]xacobeo/screen-shot-01t.png" alt="po nahraní XML súboru" /></a> 
+<a href="[% relative_root %]xacobeo/screen-shot-02.png" title="double-click do DOM stromu" class="thickbox" rel="gallery-xacobeo"><img src="[% relative_root %]xacobeo/screen-shot-02t.png" alt="double-click do DOM stromu" /></a> 
+<a href="[% relative_root %]xacobeo/screen-shot-03.png" title="výsledok jednoduchého XPath" class="thickbox" rel="gallery-xacobeo"><img src="[% relative_root %]xacobeo/screen-shot-03t.png" alt="výsledok jednoduchého XPath" /></a> 
+<a href="[% relative_root %]xacobeo/screen-shot-04.png" title="zvýrazňovanie chybnej XPath" class="thickbox" rel="gallery-xacobeo"><img src="[% relative_root %]xacobeo/screen-shot-04t.png" alt="zvýrazňovanie chybnej XPath" /></a> 
+<a href="[% relative_root %]xacobeo/screen-shot-05.png" title="zložitejší XPath" class="thickbox" rel="gallery-xacobeo"><img src="[% relative_root %]xacobeo/screen-shot-05t.png" alt="zložitejší XPath" /></a> 
+</p>
+
+<p><a href="index.html">Iné projekty</a></p>
+

@@ -1,0 +1,36 @@
+[% IF template.redirect -%]
+	[%- INCLUDE redirect.tt2 redirect=template.redirect -%]
+[% ELSE -%]
+[% INCLUDE _header.tt2 -%]
+	<div id="content">
+	<div id="content_inside">
+
+[% INCLUDE "mini-menu.tt2" %]
+		
+		<div id="content_inside_main"[% template.content_max_width ? ' class="content_max_width"' : '' %]>
+
+		[%-# add error and info messages divs -%]
+		<div class="error[% error_msg ? "" : " hidden" %]">
+			<img class="icon" src="[% content_root %]images/icons/32x32/dialog-error.png" alt="!" />
+			<div id="errorMessage">[% error_msg %]</div>
+		</div>
+		<div class="info[% info_msg ? "" : " hidden" %]">
+			<img class="icon" src="[% content_root %]images/icons/32x32/dialog-information.png" alt="" />
+			<div id="infoMessage">[% info_msg %]</div>
+		</div>
+		
+		[%-# add warn that there is no eng translation if required -%]
+		[%- IF template.no_en && (lang == 'en') %]
+		<div class="warn">
+			<img class="icon" src="[% content_root %]images/icons/32x32/dialog-warning.png" alt="!" />
+			<div>No english translation, sorry.</div>
+		</div>
+		[% END -%]
+		
+[% content %]
+
+		</div>	
+	</div>	
+	</div>
+[% INCLUDE _footer.tt2 -%]
+[% END -%]

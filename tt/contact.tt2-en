@@ -1,0 +1,27 @@
+[%
+META title       = "Contact information";
+META description = "Bratislava Perl Mongers contact information";
+META keywords    = "Perl, Bratislava, contact";
+
+META message_divs = 1;
+%]
+
+<h1>Mailing-list</h1>
+<p>The primary contact is our mailing list. If you are new here, register there to the
+<a href="http://mail.pm.org/mailman/listinfo/bratislava-pm">mailing list</a> and drop
+us a few lines about you, how do you use Perl or directly shoot a question.
+Everyone is welcome!</p>
+
+<h1>IRC</h1>
+<pre>
+Server:  irc.perl.org
+Channel: #slovakia.pm
+</pre>
+
+<h1>Facebook</h1>
+
+<p>group - <a href="http://www.facebook.com/group.php?gid=43903647807">Bratislava Perl Mongers</a></p>
+
+<h1>Who is Who</h1>
+
+<p><a href="[% root_path %]who.html">Discover</a> the Bratislava Perl Mongers</p>
