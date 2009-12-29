@@ -38,8 +38,8 @@
 	<xsl:if test="$lang = 'sk'"><h1>Planéta</h1></xsl:if>
 	<xsl:if test="$lang = 'en'"><h1>Planet</h1></xsl:if>
 	<div>
-		<xsl:if test="$lang = 'sk'">Správy a novinky z blogov Bratislava Perl Mongers sa nachádzajú <a href="planet/">tu</a>.</xsl:if>
-		<xsl:if test="$lang = 'en'">News for Bratislava Perl Mongers blogs can be found <a href="planet/">here</a></xsl:if>
+		<xsl:if test="$lang = 'sk'">Správy a novinky z blogov Bratislava Perl Mongers sa nachádzajú na <a href="planet/">planéte</a>.</xsl:if>
+		<xsl:if test="$lang = 'en'">News for Bratislava Perl Mongers blogs can be found on <a href="planet/">the planet</a></xsl:if>
 	</div>
 
 	<div>
