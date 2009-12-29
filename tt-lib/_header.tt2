@@ -29,9 +29,11 @@
 	# Special cases for pages that have a deep path
 	IF top_menu.match('^presentation/');
 		top_menu = 'events';
-	ELSIF top_menu.match('^(review/|tutorial/|projects/|who|store)');
-		top_menu = 'other';
-	ELSIF top_menu.match('^(cgi/email)');
+	ELSIF top_menu.match('^(projects/)');
+		top_menu = 'projects/';
+	ELSIF top_menu.match('^(review/|tutorial/)');
+		top_menu = 'txt';
+	ELSIF top_menu.match('^(who)');
 		top_menu = 'contact';
 	END;
 
@@ -42,7 +44,8 @@
 
 		{
 			page  => 'index',
-			label => 'PM',
+			label => 'O čom?',
+			en    => 'About',
 		},
 
 		{
@@ -52,20 +55,14 @@
 		},
 
 		{
-			page  => 'other',
-			label => 'Ostatné',
-			en    => 'Other',
+			page  => 'projects/',
+			label => 'Projekty',
+			en    => 'Projects',
 		},
-
 		{
-			page  => 'links',
-			label => 'Linky',
-			en    => 'Links'
-		},
-
-		{
-			page  => 'job',
-			label => 'Job',
+			page  => 'txt',
+			label => 'Písomnosti',
+			en    => 'Writings',
 		},
 
 		{
@@ -82,7 +79,8 @@
 			[% FOREACH link IN links.reverse %]
 				<li>
 					<a [% IF top_menu == link.page %] class="active"[% END %]
-					href="[% "${root_path}${link.page}.html" %]">[% link.$lang || link.label %]</a>
+					[% extension = ( link.page.match('/$') ? '' : '.html' ) %]
+					href="[% "${root_path}${link.page}${extension}" %]">[% link.$lang || link.label %]</a>
 				</li>
 			[% END %]
 		</ul>		

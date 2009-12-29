@@ -51,26 +51,6 @@ META keywords    = "Perl, webdesign, programming, xml, links";
 	<li><a href="http://www.postgresql.org/docs/8.2/interactive/index.html">Postgres</a></li>
 </ul>
 
-<h1>Bratislava</h1>
-<ul>
-        <li>
-                <a href="http://visit.bratislava.sk/">
-                Oficiálne stránky Hlavného mesta SR Bratislavy
-                </a><br/>
-                <a href="http://visit.bratislava.sk/en/">
-                The Official Website of the City of Bratislava
-                </a><br/>
-                <a href="http://visit.bratislava.sk/de/">
-                Die offizielle Webseite der Stadt Bratislava
-                </a><br/>
-        </li>
-        <li>
-        	<a href="http://www.bratislavaguide.com/bratislava-vienna-budapest-prague-travel">
-        	Travel to Bratislava from Vienna, Prague, Budapest
-        	</a>
-        </li>
-</ul>
-
 <h1>Bratislava Perl Mongers</h1>
 <ul>
 	<li><a href="[% content_root %]download/templates/presentation-template.otp">OpenOffice vzor pre prezentáciu</a></li>

@@ -1,7 +1,7 @@
 [%
-META title       = "Other";
-META description = "tutorials, books reviews, projects, prezentations";
-META keywords    = "tutorials, books reviews, projects, prezentations";
+META title       = "Writings";
+META description = "tutorials, book reviews, prezentations";
+META keywords    = "tutorials, book reviews, prezentations";
 %]
 
 <h1>[% lang == 'sk' ? 'Návody' : 'Tutorials' %]</h1>
@@ -16,9 +16,11 @@ META keywords    = "tutorials, books reviews, projects, prezentations";
 		[% lang == 'sk' ? 'Ako na CPAN-like modul' : 'How to make CPAN-like modul' %]
 	</a></li>
 	<li><a href="tutorial/utf8-locale.html">utf8 &amp;&amp; locale</a></li>
-	<li><a href="tutorial/tt-ba_pm.html">
-		[% lang == 'sk' ? 'Generovanie Bratislava.pm.org pomocou Template Toolkit' : 'generating Bratislava.pm.org using Template Toolkit' %]
+	[% IF lang == 'sk' %]
+	<li><a href="b/cool/">
+		[% lang == 'sk' ? 'B::Cool alebo prečo Perl' : 'B::Cool' %]
 	</a></li>
+	[% END %]
 </ul>
 
 <h1>[% lang == 'sk' ? 'Knihy' : 'Books' %]</h1>
@@ -36,16 +38,12 @@ META keywords    = "tutorials, books reviews, projects, prezentations";
 		Tips &amp; Tools For Programming, Debugging, and Surviving
 	</li>
 </ul>
-<h3>[% lang == 'sk' ? 'Naše' : 'Ours' %]</h3>
+
+<h1>[% lang == 'sk' ? 'Linky' : 'Links' %]</h1>
 <ul>
-	<li><a href="store.html">[% lang == 'sk' ? 'Zoznam kníh ktoré niekto z nás vlastní' : 'A list of books owned by us' %]</a></li>
+	<li><a href="links.html">[% lang == 'sk' ? 'Odkazy ohľadom jazyka Perl' : 'Perl related links' %]</a></li>
 </ul>
 
-<h1>[% lang == 'sk' ? 'Všehochuť' : 'Miscellaneous' %]</h1>
-<ul>
-	<li><a href="projects/">[% lang == 'sk' ? 'Projekty' : 'Projects' %]</a></li>
-	<li><a href="planet/">[% lang == 'sk' ? 'ba.pm planéta' : 'ba.pm planet' %]</a></li>
-</ul>
 
 <!-- Presentations -->
 <h1>[% lang == 'sk' ? 'Prezentácie' : 'Presentations' %]</h1>
