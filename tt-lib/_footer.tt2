@@ -1,7 +1,7 @@
 [% USE date %]
 	<div id="footer">
 	<div id="footer_inside">
-		<p>© Copyright [% date.format(mytime, '%Y') %]</p>
+		<p><a href="http://www.perl.org/">Perl [% date.format(mytime, '%Y') %]</a></p>
 	</div>
 	</div>
 	[%- IF template.inc_googlemaps %]

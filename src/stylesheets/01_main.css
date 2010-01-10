@@ -145,10 +145,10 @@ cite {
 	visibility:hidden;
 }
 #content_inside {
-	border-left:1px solid #bbb;
-	border-right:1px solid #bbb;
+	border:1px solid #bbb;
 	margin:0 auto;
 	width:800px;
+	background:#fff url('../images/shadow.gif') repeat-x 0 0;
 }
 #content_inside_sidebar {
 	border-left:1px solid #bbb;
@@ -188,7 +188,6 @@ cite {
 	color:#000;
 }
 #content_inside_main {
-	background:#fff;
 	letter-spacing:-1px;
 	line-height:175%;
 	margin:0 auto;

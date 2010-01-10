@@ -27,11 +27,11 @@
 	top_menu = template.top_menu || template.name.replace('\.tt2(-..)?$', '');
 
 	# Special cases for pages that have a deep path
-	IF top_menu.match('^presentation/');
+	IF top_menu.match('^planet/');
 		top_menu = 'events';
 	ELSIF top_menu.match('^(projects/)');
 		top_menu = 'projects/';
-	ELSIF top_menu.match('^(review/|tutorial/|links)');
+	ELSIF top_menu.match('^(review/|tutorial/|links|presentation/)');
 		top_menu = 'txt';
 	ELSIF top_menu.match('^(who)');
 		top_menu = 'contact';
