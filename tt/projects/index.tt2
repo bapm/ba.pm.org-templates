@@ -24,6 +24,7 @@ META keywords    = "Perl, projekty";
 <p><a href="[% root_path %]who.html#jozef">Jozef Kutej</a></p>
 <ul>
     <li><a href="http://search.cpan.org/~jkutej/">rôzne CPAN moduly</a></li>
+    <li><a href="http://search.meonl.com/en/">porovnajte si vyhľadávače - search.meonl.com</a></li>
     <li><a href="http://github.com/jozef/">a zvyšný OpenSource</a></li>
 </ul>
 
