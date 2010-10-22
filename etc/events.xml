@@ -476,5 +476,31 @@
 	</ba:description>
 </ba:event>
 
+<ba:event>
+	<ba:title lang="sk">Bratislava.pm meeting v Októbri</ba:title>
+	<ba:title lang="en">Bratislava.pm October meeting</ba:title>
+	<ba:link>http://bratislava.pm.org/events.html#meeting-ba-pm-2010-10</ba:link>
+	<ba:subject>events</ba:subject>
+	<ba:creator>jozef</ba:creator>
+	<ba:date>2010-10-22T18:00:0+02:00</ba:date>
+	<ba:id>meeting-ba-pm-2010-10</ba:id>
+	<ba:description lang="sk" xmlns="http://www.w3.org/1999/xhtml">
+		<p><b>22 Október 2010 18:00</b></p>
+		<p>Prezentácie:</p>
+		<ul>
+			<li>Jozef - <a href="http://bratislava.pm.org/presentation/cpan-vnutornosti.html">CPAN vnútornosti</a></li>
+			<li>Emmanuel - ako môžeme spojiť Log4perl s SOAP::Lite-om (lightning talk)</li>
+		</ul>
+	</ba:description>
+	<ba:description lang="en" xmlns="http://www.w3.org/1999/xhtml">
+		<p><b>22 October 2010 18:00</b></p>
+		<p>Presentations:</p>
+		<ul>
+			<li>Jozef - <a href="http://bratislava.pm.org/presentation/cpan-vnutornosti.html">CPAN vnútornosti</a></li>
+			<li>Emmanuel - Log4perl + SOAP::Lite (lightning talk)</li>
+		</ul>
+	</ba:description>
+</ba:event>
+
 
 </ba:events>
