@@ -502,5 +502,54 @@
 	</ba:description>
 </ba:event>
 
+<ba:event>
+	<ba:title lang="sk">Bratislava.pm meeting v Máji</ba:title>
+	<ba:title lang="en">Bratislava.pm May meeting</ba:title>
+	<ba:link>http://bratislava.pm.org/events.html#meeting-ba-pm-2011-05</ba:link>
+	<ba:subject>events</ba:subject>
+	<ba:creator>jozef</ba:creator>
+	<ba:date>2011-05-16T18:00:0+02:00</ba:date>
+	<ba:id>meeting-ba-pm-2011-05</ba:id>
+	<ba:description lang="sk" xmlns="http://www.w3.org/1999/xhtml">
+		<p><b>16 Máj 2011 18:00</b></p>
+		<p>Témy:</p>
+		<ul>
+			<li>Cyclone3 BugDay</li>
+			<li>"\N{SOFT HYPHEN}"</li>
+			<li><a href="http://pkg-perl.alioth.debian.org/cpan2deb/">http://pkg-perl.alioth.debian.org/cpan2deb/</a></li>
+			<li><a href="http://2011.qa-hackathon.org/">http://2011.qa-hackathon.org/</a></li>
+			<li>Potyl - <a href="https://github.com/potyl/Webkit">Webkit</a></li>
+		</ul>
+	</ba:description>
+	<ba:description lang="en" xmlns="http://www.w3.org/1999/xhtml">
+		<p><b>16 May 2011 18:00</b></p>
+		<p>Topics:</p>
+		<ul>
+			<li>Cyclone3 BugDay</li>
+			<li>"\N{SOFT HYPHEN}"</li>
+			<li><a href="http://pkg-perl.alioth.debian.org/cpan2deb/">http://pkg-perl.alioth.debian.org/cpan2deb/</a></li>
+			<li><a href="http://2011.qa-hackathon.org/">http://2011.qa-hackathon.org/</a></li>
+			<li>Potyl - <a href="https://github.com/potyl/Webkit">Webkit</a></li>
+		</ul>
+	</ba:description>
+</ba:event>
+
+<ba:event>
+	<ba:title>YAPC::Europe 2011 - Riga</ba:title>
+	<ba:link>http://bratislava.pm.org/events.html#yapc-eu-2011</ba:link>
+	<ba:subject>events</ba:subject>
+	<ba:creator>jozef</ba:creator>
+	<ba:date>2011-08-15T10:00:0+03:00</ba:date>
+	<ba:id>yapc-eu-2011</ba:id>
+	<ba:description lang="sk" xmlns="http://www.w3.org/1999/xhtml">
+		<p><b>15-17 August 2011</b></p>
+		<p>Tento rok sa bude konať <a href="http://www.yapceurope.lv/ye2011/">YAPC::Europe 2011</a> v Rige.</p>
+	</ba:description>
+	<ba:description lang="en" xmlns="http://www.w3.org/1999/xhtml">
+		<p><b>15-17 August 2011</b></p>
+		<p>This years <a href="http://www.yapceurope.lv/ye2011/">YAPC::Europe 2011</a> will take place in Riga.</p>
+	</ba:description>
+</ba:event>
+
 
 </ba:events>
