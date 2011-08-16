@@ -48,6 +48,13 @@ META keywords    = "tutorials, book reviews, prezentations";
 <!-- Presentations -->
 <h1>[% lang == 'sk' ? 'Prezentácie' : 'Presentations' %]</h1>
 
+<h3>YAPC::EU 2011 - Riga</h3>
+<p><b>16 Aug 2011 14:10</b></p>
+
+<ul>
+	<li>Jozef Kutej - <a href="[% relative_root %]presentation/perl-deployment.html">Demystify file system hierarchy for deployments</a></li>
+</ul>
+
 <h3>Tech-Social meeting</h3>
 <p><b>22 Oct 2010 18:00</b></p>
 
