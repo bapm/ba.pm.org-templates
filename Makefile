@@ -47,7 +47,7 @@ all: html/news.rdf html/en/news.rdf tt/events.tt2 tt/events.tt2-en tt/who.tt2 ${
 
 .PHONY: clean
 clean:
-	rm -rf html/*.html html/review/*.html html/tutorial/*.html html/cgi/*.html \
+	rm -rf html/*.html html/review/*.html html/tutorial/*.html html/cgi/*.html html/projects/*.html \
 	       ${PRESENTATION-TARS} \
 	       tt/events.tt2 \
 	       tt/events.tt2-en \

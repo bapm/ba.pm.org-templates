@@ -35,13 +35,6 @@
 	<xsl:if test="$lang = 'en'"><h1>Calendar</h1></xsl:if>
 	<script src="[% content_root %]js/google-calendar.js" type="text/javascript">&#160;</script>
 
-	<xsl:if test="$lang = 'sk'"><h1>Planéta</h1></xsl:if>
-	<xsl:if test="$lang = 'en'"><h1>Planet</h1></xsl:if>
-	<div>
-		<xsl:if test="$lang = 'sk'">Správy a novinky z blogov Bratislava Perl Mongers sa nachádzajú na <a href="planet/">planéte</a>.</xsl:if>
-		<xsl:if test="$lang = 'en'">News for Bratislava Perl Mongers blogs can be found on <a href="planet/">the planet</a></xsl:if>
-	</div>
-
 	<div>
 		<xsl:apply-templates select="ba:event">
 			<xsl:sort select="ba:date" order="descending"/>

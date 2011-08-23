@@ -14,7 +14,6 @@
 	<meta name="robots" content="index, follow, noarchive" />
 	<meta name="revisit-after" content="7 days" />
 	<link rel="alternate" title="Bratislava.pm.org - news" href="[% root_path %]news.rdf" type="application/rss+xml" />
-	<link rel="alternate" title="Bratislava.pm.org - planet" href="[% root_path %]planet/" type="application/rss+xml" />
 	<link rel="shortcut icon" href="[% content_root %]favicon.ico" />
 </head>
 <body>
