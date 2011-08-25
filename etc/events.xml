@@ -533,5 +533,35 @@
 	</ba:description>
 </ba:event>
 
+<ba:event>
+	<ba:title lang="sk">Bratislava.pm meeting v Septembri</ba:title>
+	<ba:title lang="en">Bratislava.pm September meeting</ba:title>
+	<ba:link>http://bratislava.pm.org/events.html#meeting-ba-pm-2011-09</ba:link>
+	<ba:subject>events</ba:subject>
+	<ba:creator>jozef</ba:creator>
+	<ba:date>2011-09-08T18:00:0+02:00</ba:date>
+	<ba:id>meeting-ba-pm-2011-09</ba:id>
+	<ba:description lang="sk" xmlns="http://www.w3.org/1999/xhtml">
+		<p><b>8 September 2011 18:00</b></p>
+		<p>Témy:</p>
+		<ul>
+			<li>barney - <a href="http://search.cpan.org/perldoc?SQL::Admin">SQL::Admin</a></li>
+			<li>potyl - <a href="https://github.com/potyl/camarero">very simple web server</a></li>
+			<li>jozef - <a href="http://yapceurope.lv/ye2011/">YAPC::EU::2011</a></li>
+			<li>* - TwinCity Perl Workshop 2011 organizačné veci</li>
+		</ul>
+	</ba:description>
+	<ba:description lang="en" xmlns="http://www.w3.org/1999/xhtml">
+		<p><b>8 September 2011 18:00</b></p>
+		<p>Topics:</p>
+		<ul>
+			<li>barney - <a href="http://search.cpan.org/perldoc?SQL::Admin">SQL::Admin</a></li>
+			<li>potyl - <a href="https://github.com/potyl/camarero">very simple web server</a></li>
+			<li>jozef - <a href="http://yapceurope.lv/ye2011/">YAPC::EU::2011</a></li>
+			<li>* - TwinCity Perl Workshop 2011 orga stuff</li>
+		</ul>
+	</ba:description>
+</ba:event>
+
 
 </ba:events>
