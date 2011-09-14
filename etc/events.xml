@@ -563,5 +563,52 @@
 	</ba:description>
 </ba:event>
 
+<ba:event>
+	<ba:title lang="sk">TwinCity Perl Workshop 2011 - Call for papers</ba:title>
+	<ba:title lang="en">TwinCity Perl Workshop 2011 - Call for papers</ba:title>
+	<ba:link>http://bratislava.pm.org/events.html#meeting-ba-pm-2011-09</ba:link>
+	<ba:subject>events</ba:subject>
+	<ba:creator>jozef</ba:creator>
+	<ba:date>2011-09-13T22:30:0+02:00</ba:date>
+	<ba:id>tcpw2011-call-for-papers</ba:id>
+	<ba:description lang="sk" xmlns="http://www.w3.org/1999/xhtml">
+		<p><b>13 September 2011</b></p>
+		<p>
+			Ohlasujeme "call for papers" to znamená, že sa hľadajú prednášatelia na
+			<a href="http://conferences.yapceurope.org/tcpw2011/">TwinCity Perl Workshop 2011</a>,
+			ktorý sa bude konať 4. a 5. novembra vo Viedni a Bratislave.
+			Prednášky by sa mali týkať programovacieho jazyka Perl, nástrojov a projektov,
+			ktoré sú riešené pomocou neho. Termín podania prihlášky na prezentáciu je
+			15. október.
+		</p>
+		<p>
+			Na poslanie abstraktu použite <a href="http://conferences.yapceurope.org/tcpw2011/">našu stránku</a>.
+		</p>
+		<p>
+			Prosím prihláste sa na
+			<a href="http://conferences.yapceurope.org/tcpw2011/atom/en.xml">odoberanie newsfeed-u</a>,
+			aby ste boli vždy načas informovaní o novinkách.
+		</p>
+	</ba:description>
+	<ba:description lang="en" xmlns="http://www.w3.org/1999/xhtml">
+		<p><b>13 September 2011</b></p>
+		<p>
+			We are announcing the call for papers for talks and workshops for the
+			<a href="http://conferences.yapceurope.org/tcpw2011/">TwinCity Perl Workshop 2011</a>
+			which will be held on 4th–5th November in Vienna and
+			Bratislava. We would like to hear about your topics concerning the Perl family
+			of languages and related topics. The deadline for submissions is October 15th.
+		</p>
+		<p>
+			To submit a talk abstract and for further details visit
+			<a href="http://conferences.yapceurope.org/tcpw2011/">our web site</a>.
+		</p>
+		<p>
+			Please <a href="http://conferences.yapceurope.org/tcpw2011/atom/en.xml">subscribe to the newsfeed</a>
+			to stay updated.
+		</p>
+	</ba:description>
+</ba:event>
+
 
 </ba:events>
