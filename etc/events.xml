@@ -546,8 +546,8 @@
 		<p>Témy:</p>
 		<ul>
 			<li>barney - <a href="http://search.cpan.org/perldoc?SQL::Admin">SQL::Admin</a></li>
-			<li>potyl - <a href="https://github.com/potyl/camarero">very simple web server</a></li>
-			<li>jozef - <a href="/presentation/yapc-eu-2011.html">YAPC::EU::2011</a></li>
+			<li>potyl - <a href="/presentation/WebKit-en.pdf">WebKit - open source web browser engine</a></li>
+			<li>jozef - <a href="/presentation/yapc-eu-2011.html">YAPC::EU::2011 notes</a></li>
 			<li>* - TwinCity Perl Workshop 2011 organizačné veci</li>
 		</ul>
 	</ba:description>
@@ -556,8 +556,8 @@
 		<p>Topics:</p>
 		<ul>
 			<li>barney - <a href="http://search.cpan.org/perldoc?SQL::Admin">SQL::Admin</a></li>
-			<li>potyl - <a href="https://github.com/potyl/camarero">very simple web server</a></li>
-			<li>jozef - <a href="http://bratislava.pm.org/presentation/yapc-eu-2011.html">YAPC::EU::2011</a></li>
+			<li>potyl - <a href="/presentation/WebKit-en.pdf">WebKit - open source web browser engine</a></li>
+			<li>jozef - <a href="http://bratislava.pm.org/presentation/yapc-eu-2011.html">YAPC::EU::2011 notes</a></li>
 			<li>* - TwinCity Perl Workshop 2011 orga stuff</li>
 		</ul>
 	</ba:description>
