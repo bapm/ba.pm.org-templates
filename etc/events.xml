@@ -610,5 +610,28 @@
 	</ba:description>
 </ba:event>
 
+<ba:event>
+	<ba:title lang="sk">Bratislava.pm meeting v Septembri</ba:title>
+	<ba:title lang="en">Bratislava.pm September meeting</ba:title>
+	<ba:link>http://bratislava.pm.org/events.html#meeting-ba-pm-2012-09</ba:link>
+	<ba:subject>events</ba:subject>
+	<ba:creator>jozef</ba:creator>
+	<ba:date>2012-09-17T18:30:0+02:00</ba:date>
+	<ba:id>meeting-ba-pm-2012-09</ba:id>
+	<ba:description lang="sk" xmlns="http://www.w3.org/1999/xhtml">
+		<p><b>17 September 2012 18:30</b></p>
+		<p>Témy:</p>
+		<ul>
+			<li>Potyl - <a href="https://github.com/potyl/gir-fun">GObject Introspection for Perl</a></li>
+		</ul>
+	</ba:description>
+	<ba:description lang="en" xmlns="http://www.w3.org/1999/xhtml">
+		<p><b>17 September 2012 18:30</b></p>
+		<p>Topics:</p>
+		<ul>
+			<li>Potyl - <a href="https://github.com/potyl/gir-fun">GObject Introspection for Perl</a></li>
+		</ul>
+	</ba:description>
+</ba:event>
 
 </ba:events>
